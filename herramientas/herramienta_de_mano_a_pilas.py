@@ -1,0 +1,4 @@
+from herramienta_electrica_de_mano import Herramienta_electrica_de_mano
+
+class Herramienta_de_mano_a_pilas(Herramienta_electrica_de_mano):
+    pass

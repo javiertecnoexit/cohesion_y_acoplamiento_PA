@@ -1,45 +1,70 @@
+from pickle import FALSE, TRUE
+
+
 class Navaja_Suiza:
-       def __init__(self):
+    def __init__(self):
         pass
+    
+        
 
-        def navaja(sef):
-            pass
+    def navaja(sef):
+        print("desplegar navaja")
 
-        def pinza(self):
-            pass
-  
-        def tijera(self):
-            pass
-  
-        def destornillador_plano(self):
-            pass
-  
-        def destornillador_phillips(self):
-            pass
-  
-        def sacacorcho(self):
-            pass
-  
-        def abrelata(self):
-            pass
-  
-        def destapador(self):
-            pass
-  
-        def serrucho(self):
-            pass
+    def pinza(self):
+        print("desplegar pinza")
 
-        def lima(self):
-            pass
-  
-        def pinza_de_depilar(self):
-            pass
-  
-        def escarbadiente(self):
-            pass
+    def tijera(self):
+        print("desplegar tijera")
 
-        def lupa(self):
-            pass
-  
-        def linterna(self):
-            pass
+    def __destornillador_plano(self):
+        print("desplegar destornillador plano")
+
+    def destornillador_phillips(self):
+        print("desplegar destornillador phillips")
+
+    def sacacorcho(self):
+        print("desplegar sacacorcho")
+
+    def abrelata(self):
+        print("desplegar abrelata")
+
+    def destapador(self, usa_destornillador=FALSE):
+        print("desplegar destapador")
+        if usa_destornillador==TRUE:
+            self.__destornillador_plano()
+
+    def serrucho(self, usa_lima=FALSE):
+        print("desplegar serrucho")
+        if usa_lima == TRUE:
+            self.__lima()
+
+    def __lima(self):
+        print("desplegar lima")
+
+    def pinza_de_depilar(self):
+        print("desplegar pinza de depilar")
+
+    def escarbadiente(self):
+        print("desplegar escarbadiente")
+
+    def lupa(self):
+        print("desplegar navaja")
+
+    def linterna(self):
+        print("desplegar linterna")
+        print("encender linterna")
+        
+    def boligrafo(self):
+        print("desplegar boligrafo")
+    
+    def saca_escamas(self, usa_regla=FALSE):
+        print("desplegar saca escamas")
+        if usa_regla == TRUE:
+            self.__regla()
+    
+    def __regla(self):
+        print("desplegar regla")
+
+victorinox= Navaja_Suiza()
+
+victorinox.destapador(TRUE)

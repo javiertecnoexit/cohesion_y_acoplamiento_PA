@@ -1,11 +1,6 @@
-from herramienta import Herramienta
+from herramienta_de_mano import Herramienta_de_mano
 
-class Destornillador(Herramienta):
+class Destornillador(Herramienta_de_mano):
     pass
 
 
-class Destornillador_Plano(DeprecationWarning):
-    pass
-
-class Destornillador_phillips(Destornillador):
-    pass

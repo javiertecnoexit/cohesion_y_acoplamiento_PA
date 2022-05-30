@@ -1,4 +1,4 @@
-from herramienta import Herramienta
+from  herramienta_de_mano import Herramienta_de_mano
 
-class Serrucho(Herramienta):
+class Serrucho(Herramienta_de_mano):
     pass
